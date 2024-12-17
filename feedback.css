@@ -1,0 +1,108 @@
+
+        body {
+            background-color: #1e1e1e;
+            color: #fff;
+            font-family: Arial, sans-serif;
+            padding-top: 50px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: auto;
+        }
+
+        .feedback-section {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .feedback-title {
+            font-size: 2.5em;
+            font-weight: bold;
+            color: #ffcc00; 
+            margin-bottom: 20px;
+        }
+
+        .feedback-description {
+            font-size: 1.2em;
+            color: #ddd;
+            margin-bottom: 40px;
+        }
+
+        .form-control {
+            background-color: #2c2c2c; 
+            color: #f1ecec;
+            border: 1px solid #444;
+        }
+
+        .form-control:focus {
+            border-color: #ffcc00; 
+            box-shadow: none;
+            background-color: #2c2c2c;
+            color: #fefcfc;
+        }
+.form-control option{
+    color: #9f9999;
+}
+        .btn-submit {
+            background-color: #ffcc00;
+            color: #000;
+            font-weight: bold;
+            border: none;
+            padding: 10px 20px;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn-submit:hover {
+            background-color: #e6b800;
+        }
+
+        footer {
+            background-color: #000;
+            padding: 20px;
+            text-align: center;
+            color: #ccc;
+            width: 100%;
+            margin-top: 50px;
+        }
+        .form-control::placeholder {
+            color: #aaa; 
+        }
+@media (max-width: 768px) {
+    .feedback-title {
+        font-size: 2em; 
+    }
+
+    .feedback-description {
+        font-size: 1em; 
+    }
+
+    .btn-submit {
+        padding: 8px 15px; 
+    }
+}
+
+@media (max-width: 576px) {
+    .feedback-title {
+        font-size: 1.8em; 
+    }
+
+    .feedback-description {
+        font-size: 0.9em; 
+    }
+
+    .container {
+        padding: 0 10px; 
+    }
+
+    .btn-submit {
+        width: 100%;
+    }
+}
+@media (max-width: 376px){
+
+    .btn-submit{
+        margin-bottom: 90px;
+    }
+    
+    }

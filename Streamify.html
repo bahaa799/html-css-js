@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Streamify</title>
+   
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+
+
+<header class="container-fluid">
+    <div class="container d-flex align-items-center justify-content-between">
+        <img src="Photos/logo.png" alt="Streamify Logo" class="logo" style="height: 80px;">
+        
+       
+        <nav class="navbar navbar-expand-lg navbar-dark" style="margin-top: 5px;">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" id="servicesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Services</a>
+                        <div class="dropdown-menu" aria-labelledby="servicesDropdown">
+                            <a class="dropdown-item" href="explore.html">Explore Our Plan</a>
+                            <a class="dropdown-item" href="signup.html">Sign Up</a>
+                        </div>
+                    </li>
+                    <li class="nav-item"><a href="aboutus.html" class="nav-link">About Us</a></li>
+                    <li class="nav-item"><a href="contactus.html" class="nav-link">Contact Us</a></li>
+                </ul>
+
+
+                
+<div class="search-container ml-4">
+    <span class="search-icon" onclick="toggleSearchBox()">⌕</span>
+    <div class="search-box" id="searchBox">
+        <form class="d-flex" onsubmit="handleSearch(event)">
+            <input class="form-control search-input" type="search" placeholder="Search" aria-label="Search" required>
+            <button class="btn btn-red ml-2" type="submit">Go</button>
+        </form>
+    </div>
+</div>
+
+
+
+            </div>
+        </nav>
+    </div>
+</header>
+
+
+<main class="container mt-4">
+    <section id="home" class="mb-5">
+        <h1 class="text-center">Welcome to Streamify</h1>
+        <p class="text-center">Explore popular and featured movies on Streamify.</p>
+    </section>
+
+    
+    
+    <section class="mb-5">
+        <h2>Popular on Streamify</h2>
+        <div class="carousel" >
+            <div class="slides">
+                <div class="slide"><img src="Photos/Cover 1.jpg" alt="Ad 1"></div>
+                <div class="slide"><img src="Photos/Cover 2.jpg" alt="Ad 2"></div>
+                <div class="slide"><img src="Photos/Cover 3.jpg" alt="Ad 3"></div>
+                <div class="slide"><img src="Photos/Cover 4.jpg" alt="Ad 3"></div>
+                <div class="slide"><img src="Photos/Cover 5.jpg" alt="Ad 3"></div>
+            </div>
+        </div>
+         
+    </section>
+    
+
+
+   
+    <section>
+        <h2>Categories</h2>
+    
+      
+        <div class="d-flex align-items-center">
+            <h3>Romantic Movies</h3>
+            <a href="romantic-more.html" class="btn-arrow">
+                <span>➩</span> 
+            </a>
+        </div>
+    
+        <div class="movie-category" id="romanticMovies">
+            <a href="https://youtu.be/tD3KLEXfZuA?si=WZIQFC0dci2rgZxe" class="movie-item" data-title="Autumn’s Embrace" data-description="A love story blossoms between two strangers who meet under golden autumn leaves." data-trailer="Videos/Romantic1-trailer.mp4">
+                <img src="Photos/Romantic 1.jpg" alt="Romantic Movie 1">
+            </a>
+            <a href="https://youtu.be/6jvqXxt3WNo?si=0ChXJLUM-RICVsFn" class="movie-item" data-title="Rainy Rendezvous" data-description="Two individuals stranded by a sudden rainstorm find an unexpected connection under a shared umbrella." data-trailer="Videos/Romantic2-trailer.mp4">
+                <img src="Photos/Romantic 2.jpg" alt="Romantic Movie 2">
+            </a>
+            <a href="https://youtu.be/PMeHdc25BGE?si=u1T0DPZl_ZFpJBa0" class="movie-item" data-title="Beachside Vows" data-description="A couple revisits their favorite seaside spot, where they first fell in love, to renew their wedding vows." data-trailer="Videos/Romantic3-trailer.mp4">
+                <img src="Photos/Romantic 3.jpg" alt="Romantic Movie 3">
+            </a>
+            <a href="https://youtube.com/playlist?list=PL4JMP4eWFX50TiQ0e6EXTZJT6m3PmTM_X&si=wswMuA7PwJAkKlgl" class="movie-item" data-title="Midnight Cruise" data-description="An enchanting romance unfolds during a magical evening on a luxury cruise liner." data-trailer="Videos/Romantic4-trailer.mp4">
+                <img src="Photos/Romantic 4.jpg" alt="Romantic Movie 4">
+            </a>
+            <a href="https://youtu.be/qBczncM0ntk?si=e9PqLf9mGB-xnYDT" class="movie-item" data-title="Moonlit Serenade" data-description="Under a glowing full moon, two dreamers discover their destiny among the stars." data-trailer="Videos/Romantic5-trailer.mp4">
+                <img src="Photos/Romantic 5.jpg" alt="Romantic Movie 5">
+            </a>
+        </div>
+    
+        
+        <div class="d-flex align-items-center">
+            <h3>Action Movies</h3>
+            <a href="action-more.html" class="btn-arrow">
+                <span>➩</span> 
+            </a>
+        </div>
+    
+        <div class="movie-category" id="actionMovies">
+            <a href="https://youtu.be/wpHvBrIIJnA?si=1gu9IuvDnrIF9Ljc" class="movie-item" data-title="Desert Fury" data-description="A fearless driver joins a high-stakes chase across a treacherous desert to recover stolen treasure." data-trailer="Videos/Action1-trailer.mp4">
+                <img src="Photos/Action 1.jpg" alt="Action Movie 1">
+            </a>
+            <a href="https://youtu.be/mQkdJcDbwB8?si=C_4P81KcMSQVm6Gr" class="movie-item" data-title="Titan Clash" data-description="Humanity’s last hope rests on a warrior facing a monstrous titan threatening to destroy the city." data-trailer="Videos/Action2-trailer.mp4">
+                <img src="Photos/Action 2.jpg" alt="Action Movie 2">
+            </a>
+            <a href="https://youtu.be/DvV1u0CTVfc?si=S7YlGJgdFfsdd4eT" class="movie-item" data-title="Shadow Ops" data-description="A rogue agent takes on a secret mission, battling enemies in a dense and dangerous forest." data-trailer="Videos/Action3-trailer.mp4">
+                <img src="Photos/Action 3.jpg" alt="Action Movie 3">
+            </a>
+            <a href="https://youtu.be/ML0Xy4eJv70?si=-3FbULGBeLzqugnC" class="movie-item" data-title="Urban Reckoning" data-description="A vigilante navigates a dystopian cityscape, battling corruption to save his family." data-trailer="Videos/Action4-trailer.mp4">
+                <img src="Photos/Action 4.jpg" alt="Action Movie 4">
+            </a>
+            <a href="https://youtu.be/bqym0hsJQbM?si=wSB15enZTc8Xf8Pz" class="movie-item" data-title="Steel Streets" data-description="Amid crumbling skyscrapers, a soldier fights against a ruthless gang to rescue hostages and restore order." data-trailer="Videos/Action5-trailer.mp4">
+                <img src="Photos/Action 5.jpg" alt="Action Movie 5">
+            </a>
+        </div>
+    
+       
+        <div class="d-flex align-items-center">
+            <h3>Horror Movies</h3>
+            <a href="horror-more.html" class="btn-arrow">
+                <span>➩</span> 
+            </a>
+        </div>
+    
+        <div class="movie-category" id="horrorMovies">
+            <a href="https://youtu.be/ATi3GdospAo?si=a6VUge5LsoxLGRD7" class="movie-item" data-title="Haunted Eyes" data-description="A chilling tale of a cursed woman whose gaze brings death, drawing victims into her horrifying past." data-trailer="Videos/Horror1-trailer.mp4">
+                <img src="Photos/Horror 1.jpg" alt="Horror Movie 1">
+            </a>
+            <a href="https://youtu.be/o-kHN-eTr0o?si=SZ3yDBQ5DUsj3_vt" class="movie-item" data-title="Pirate of the Abyss" data-description="A ghostly pirate captain seeks vengeance against those who disturbed his watery grave." data-trailer="Videos/Horror-trailer-2.mp4">
+                <img src="Photos/Horror 2.jpg" alt="Horror Movie 2">
+            </a>
+            <a href="https://youtu.be/sxuexxlMVA0?si=3nXA_RPGxKEy2ri0" class="movie-item" data-title="Laughing Shadows" data-description="A cursed clown terrorizes a small town, its victims haunted by eerie laughter that signals doom." data-trailer="Videos/Horror-trailer-3.mp4">
+                <img src="Photos/Horror 3.jpg" alt="Horror Movie 3">
+            </a>
+            <a href="https://youtu.be/XimvdthKNas?si=HIWKiza6iCBx6Uxd" class="movie-item" data-title="Forest of Dread" data-description="A group of hikers enters a mysterious forest, unaware of the vengeful spirits lurking in the shadows." data-trailer="Videos/Horror4-trailer.mp4">
+                <img src="Photos/Horror 4.jpg" alt="Horror Movie 4">
+            </a>
+            <a href="https://youtu.be/_GsLRzKCsPU?si=akODb1Uy4GNKZwow" class="movie-item" data-title="The Veiled Spirit" data-description="A bride’s ghost haunts a crumbling mansion, searching for her lost love and punishing intruders." data-trailer="Videos/Horror5-trailer.mp4">
+                <img src="Photos/Horror 5.jpg" alt="Horror Movie 5">
+            </a>
+        </div>
+    
+      
+        <div class="d-flex align-items-center">
+            <h3>Comedy Movies</h3>
+            <a href="comedy-more.html" class="btn-arrow">
+                <span>➩</span> 
+            </a>
+        </div>
+    
+        <div class="movie-category" id="comedyMovies">
+            <a href="https://youtu.be/xfFCckNY4vg?si=GynK9WNVnZnkJYiU" class="movie-item" data-title="Nerds Gone Wild" data-description="A quirky inventor’s experiments lead to hilariously chaotic consequences for his eccentric neighbors." data-trailer="Videos/Comedy1-trailer.mp4">
+                <img src="Photos/Comedy 1.jpg" alt="Comedy Movie 1">
+            </a>
+            <a href="https://youtu.be/MDdHYjb5sBk?si=Psj8RTR-E8OacbMf" class="movie-item" data-title="Clown Confidential" data-description="Two clowns in a midlife crisis embark on a road trip to rediscover their comedic spark." data-trailer="Videos/Comedy2-trailer.mp4">
+                <img src="Photos/Comedy 2.jpg" alt="Comedy Movie 2">
+            </a>
+            <a href="https://youtu.be/fwmzEYygFz0?si=YdfEoKpwLaj6mYtL" class="movie-item" data-title="Grandpa’s Babysitting Fiasco" data-description="A well-meaning but clumsy grandpa babysits his mischievous grandkids, leading to laugh-out-loud moments." data-trailer="Videos/Comedy3-trailer.mp4">
+                <img src="Photos/Comedy 3.jpg" alt="Comedy Movie 3">
+            </a>
+            <a href="https://youtu.be/5boSRypBEaQ?si=wHAMaWzRAxY1Usi0" class="movie-item" data-title="Animated Antics" data-description="A clueless cartoonist accidentally brings his overly dramatic characters to life, creating absurd real-world chaos." data-trailer="Videos/Comedy4-trailer.mp4">
+                <img src="Photos/Comedy 4.jpg" alt="Comedy Movie 4">
+            </a>
+            <a href="https://youtu.be/Zf5zqLwB5kw?si=de8S5t8kluVx3RTt" class="movie-item" data-title="Film Frenzy" data-description="A movie director's behind-the-scenes blunders turn a serious film into an unintended comedy hit." data-trailer="Videos/Comedy5-trailer.mp4">
+                <img src="Photos/Comedy 5.jpg" alt="Comedy Movie 5">
+            </a>
+        </div>
+    </section>
+    
+</main>
+
+ 
+
+
+
+
+<section class="footer">
+    <div class="footer-main">
+   
+        <div class="footer-info">
+          
+            <div class="tags">
+              <a href="feedback.html">Feedback</a>
+          </div>
+          </div>
+          <div class="footer-info">
+            <div class="tags">
+                <a href="report-problem.html">Report a problem</a>
+            </div>
+            </div>
+            <div class="footer-info">
+            <div class="tags">
+                <a href="help-center.html">Help center</a>
+            </div>
+          </div>
+        </div>
+     
+        
+        </div>
+    <p style="text-align: center; margin-top: 15px;" >&copy; 2024 Streamify. All Rights Reserved.</p>
+</section>
+
+
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+
+</body>
+</html>
+
